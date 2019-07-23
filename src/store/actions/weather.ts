@@ -1,10 +1,12 @@
-import WeatherActionType, { WeatherData } from "../constants/weather";
+import WeatherActionType from "../constants/weather";
+import WeatherData from "../types/WeatherData";
+import Metrics from "../types/Metrics";
 
 export interface UpdateWeatherAction {
   type: WeatherActionType.UPDATE;
   payload: {
     city: string,
-    metric: string
+    metric: Metrics
   }
 }
 
@@ -23,7 +25,7 @@ export type WeatherAction =
   | UpdateWeatherSuccessAction
   | UpdateWeatherFailureAction;
 
-export const updateWeather = (city: string, metric: string): UpdateWeatherAction => ({
+export const updateWeather = (city: string, metric: Metrics): UpdateWeatherAction => ({
   type: WeatherActionType.UPDATE,
   payload: {
     city,

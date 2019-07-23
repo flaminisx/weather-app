@@ -1,5 +1,6 @@
 import { WeatherAction } from "../actions/weather";
-import WeatherActionType, { WeatherData } from "../constants/weather";
+import WeatherActionType from "../constants/weather";
+import WeatherData from "../types/WeatherData";
 
 export interface WeatherState {
   loading: boolean,
@@ -26,6 +27,7 @@ const weather = (state = initialState, action: WeatherAction): WeatherState => {
       return {
         loaded: true,
         loading: false,
+        error: undefined,
         data: action.payload
       }
     }

@@ -1,7 +1,9 @@
 import { combineReducers } from 'redux'
 import weather, { WeatherState } from './weather';
 
-export type AppState = WeatherState;
+export interface AppState{
+  weather: WeatherState;
+} 
 
 const appReducer = combineReducers({
   weather
