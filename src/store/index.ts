@@ -3,5 +3,5 @@ import appReducer from './reducers';
 import createAppMiddleware from './middleware';
 
 export default () => {
-  return createStore(appReducer, createAppMiddleware);
+  return createStore(appReducer, createAppMiddleware());
 }
