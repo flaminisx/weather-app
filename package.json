@@ -9,6 +9,7 @@
     "@types/react-dom": "16.8.4",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
+    "react-jss": "^8.6.1",
     "react-redux": "^7.1.0",
     "react-scripts": "3.0.1",
     "redux": "^4.0.4",
@@ -36,6 +37,7 @@
     ]
   },
   "devDependencies": {
+    "@types/react-jss": "^8.6.4",
     "@types/react-redux": "^7.1.1"
   }
 }
