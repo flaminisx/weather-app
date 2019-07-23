@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import Metrics from '../../store/types/Metrics';
-import Picker from './Picker';
+import Picker from '../common/Picker';
 import injectSheet from 'react-jss';
 
 interface Props {
